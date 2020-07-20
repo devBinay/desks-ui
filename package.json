@@ -13,6 +13,9 @@
     "publish-rt": "jfrog rt npmp shell-npm-snapshot",
     "test": ""
   },
+  "engines" : {
+    "node" : ">=0.12"
+  },
   "devDependencies": {
     "@shell-tools/module-build-ui": "^1.0.0",
     "@shell-tools/module-dev-ui": "^1.0.0",
