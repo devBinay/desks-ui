@@ -1,0 +1,94 @@
+{
+  "defaultPath": "/desks",
+  "modules": [
+    {
+      "id": "desks",
+      "module": "http://localhost:8090/module.js",
+      "name": "desks",
+      "icon": "dashboard",
+      "startPath": "/desks",
+      "navigation": {
+        "existing": {
+          "name": "Add desk",
+          "icon": "add",
+          "action": "deskActions"
+        },
+        "list": {
+          "outlet": "desks-list-nav"
+        }
+      },
+      "routes": [
+        { "path": "/desks" },
+        { "path": "/desks/:deskId/view" }
+      ]
+    },
+    {
+      "id": "cloudFinancials",
+      "module": "https://cdn.svc.oneadvanced.com/mosaic-shell-modules/demo-cloud-financials/latest/module.js",
+      "name": "Cloud Financials",
+      "icon": "money",
+      "applets": {
+        "averageDays": {
+          "name": "Average days",
+          "tag": "cloud-financials-average-days",
+          "props": {
+            "sm-column-span": 6,
+            "column-span": 2,
+            "row-span": 1,
+            "sm-row-span": 1
+          }
+        },
+        "journalsTile": {
+          "name": "Journals",
+          "tag": "cloud-financials-journals-tile",
+          "props": {
+            "sm-column-span": 6,
+            "sm-row-span": 1,
+            "row-span": 1
+          }
+        },
+        "purchaseOrdersTile": {
+          "name": "Purchase orders",
+          "tag": "cloud-financials-purchase-orders-tile",
+          "props": {
+            "sm-column-span": 6,
+            "sm-row-span": 1,
+            "row-span": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "todo-applet",
+      "module": "https://cdn.svc.oneadvanced.com/mosaic-shell-modules/todo-applet/0.1.1/module.js",
+      "applets": {
+        "todo": {
+          "name": "Todo applet",
+          "tag": "todo-applet",
+          "props": {
+            "sm-column-span": 6,
+            "column-span": 2,
+            "row-span": 3
+          }
+        }
+      }
+    }
+  ],
+  "navigationGroups": [
+    {
+      "name": "Desks",
+      "icon": "dashboard",
+      "layout": {
+        "sidebar": "sidebar",
+        "mobile": "left",
+        "compact-sidebar": {
+          "container": "compact-sidebar",
+          "slot": "top"
+        }
+      },
+      "modules": [
+        {"id": "desks"}
+      ]
+    }
+  ]
+}

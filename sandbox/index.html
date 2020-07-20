@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mosaic shell</title>
+  <base href="/">
+  <link rel="apple-touch-icon" href="/assets/img/icon.png">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
+  <meta name="theme-color" content="#242424">
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+    }
+    body:before{position:fixed;display:block;top:0;right:0;bottom:0;left:0;z-index:10000;content:"";background:#fff url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCAzOCAzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHJva2U9IiNlOTUxMGUiPiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSIgc3Ryb2tlLXdpZHRoPSIyIj4gICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS1vcGFjaXR5PSIuMiIgY3g9IjE4IiBjeT0iMTgiIHI9IjE4Ii8+ICAgICAgICAgICAgPHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4Ij4gICAgICAgICAgICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjAgMTggMTgiIHRvPSIzNjAgMTggMTgiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+ICAgICAgICAgICAgPC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+) center center no-repeat;}
+  </style>
+  <style>
+    mosaic-drilldown {
+      height: calc(100vh - 150px) !important;
+    }
+  </style>
+</head>
+<body>
+<mosaic-notification></mosaic-notification>
+<desk-action-dialog></desk-action-dialog>
+<desks-delete-desk-dialog></desks-delete-desk-dialog>
+<shell-routed-app></shell-routed-app>
+<!-- <script>
+  // shell specific configuration
+  window.mosaicShellBootstrap = '/api/bootstrap'
+  window.mosaicShellUserDesks = '/api/user-desks'
+
+  // Mosaic UI components configuration
+  window.mosaicConfigure = {
+    componentPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/17.2.0',
+    themePath: 'https://cdn.svc.oneadvanced.com/mosaic-components/17.2.0',
+    vendorPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/17.2.0/vendor',
+    iconPath: 'https://cdn.svc.oneadvanced.com/mosaic-icons',
+    useLayout: true,
+    useData: true,
+    useForms: true,
+    useMessaging: true,
+    usePageLoader: false,
+    frameworkBundle: 'https://dev-cdn.svc.oneadvanced.io/mosaic-shell/0.12.0/main.js'
+  }
+</script>
+<script src="https://cdn.svc.oneadvanced.com/mosaic-components/17.2.0/components-loader.js" async></script> -->
+<script>
+    // shell specific configuration
+    window.mosaicShellBootstrap = '/api/bootstrap'
+    window.mosaicShellUserDesks = '/api/user-desks'
+
+    window.mosaicConfigure = {
+
+    componentPath: 'http://127.0.0.1:8080/tmp',
+    themePath: 'http://127.0.0.1:8080/tmp',
+    vendorPath: 'http://127.0.0.1:8080/node_modules',
+    iconPath: 'http://127.0.0.1:8080/node_modules/@advanced/mosaic-icons',
+    useData: true,
+    useLayout: true,
+    useForms: true,
+    useMessaging: true,
+    usePageLoader: true,
+    useTools: true,
+    frameworkBundle: 'https://dev-cdn.svc.oneadvanced.io/mosaic-shell/0.12.0/main.js'
+  }
+</script>
+<!-- <script src="https://cdn.svc.oneadvanced.com/mosaic-components/17.2.0/components-loader.js" async></script> -->
+
+<!-- this script tag is required for loading the mosaic components -->
+<script src="http://127.0.0.1:8080/tmp/components-loader.js" async></script>
+</body>
+</html>

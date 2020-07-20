@@ -1,0 +1,26 @@
+{
+  "id": "desks",
+  "module": "https://cdn.svc.oneadvanced.com/mosaic-shell-modules/desks/0.3.0/module.js",
+  "name": "Desks",
+  "icon": "dashboard",
+  "startPath": "/desks",
+  "navigation": {
+    "existing": {
+      "name": "Add Desk",
+      "icon": "add",
+      "action": "deskActions"
+    },
+    "list": {
+      "outlet": "desks-list-nav"
+    },
+    "add": {
+      "name": "Add desk",
+      "icon": "add",
+      "action": "deskActions"
+    }
+  },
+  "routes": [
+    { "path": "/desks" },
+    { "path": "/desks/:deskId/view" }
+  ]
+}

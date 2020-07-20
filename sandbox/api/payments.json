@@ -1,0 +1,22 @@
+{
+  "title": "Average days",
+  "subTitle": "Length of time to pay",
+  "items": [
+    {
+      "icon": "money",
+      "value": 45,
+      "valueLabel": "Creditors",
+      "valueColor": "dark",
+      "subText": "Days",
+      "buttonText": "View report"
+    },
+    {
+      "icon": "money",
+      "value": 72,
+      "valueLabel": "Debtors",
+      "valueColor": "dark",
+      "subText": "Days",
+      "buttonText": "View report"
+    }
+  ]
+}

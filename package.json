@@ -1,0 +1,21 @@
+{
+  "name": "@advanced/module-desks-ui",
+  "version": "0.4.0",
+  "description": "MyWorkplace desks application module",
+  "main": "index.js",
+  "module": "src/module.js",
+  "author": "Advanced",
+  "license": "MIT",
+  "scripts": {
+    "build": "module-build-ui",
+    "dev": "module-dev-ui",
+    "lint": "standard \"ui/**/*.js\"",
+    "publish-rt": "jfrog rt npmp shell-npm-snapshot",
+    "test": ""
+  },
+  "devDependencies": {
+    "@shell-tools/module-build-ui": "^1.0.0",
+    "@shell-tools/module-dev-ui": "^1.0.0",
+    "standard": "14.3.3"
+  }
+}

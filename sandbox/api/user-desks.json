@@ -1,0 +1,151 @@
+{
+  "defaultDesk": {
+    "name": "Finance management",
+    "id": "desk-12345",
+    "slug": "finance-management",
+    "description": "A financial management desk for a finance director",
+    "access": "private",
+    "default": "true",
+    "createdOn": "12/02/2020",
+    "updatedOn": "24/02/2020",
+    "layout": {
+      "grid": {
+        "props": {
+          "fr-columns": 6,
+          "fr-rows": 4,
+          "gap": "15px"
+        }
+      },
+      "applets": [
+        {
+          "name": "Average days",
+          "tag": "cloud-financials-average-days",
+          "props": {
+            "sm-column-span": 6,
+            "column-span": 2,
+            "row-span": 1,
+            "sm-row-span": 1
+          }
+        },
+        {
+          "name": "Journals",
+          "tag": "cloud-financials-journals-tile",
+          "props": {
+            "sm-column-span": 6,
+            "sm-row-span": 1,
+            "row-span": 1
+          }
+        },
+        {
+          "name": "Purchase orders",
+          "tag": "cloud-financials-purchase-orders-tile",
+          "props": {
+            "sm-column-span": 6,
+            "sm-row-span": 1,
+            "row-span": 1
+          }
+        },
+        {
+          "name": "Todo applet",
+          "tag": "todo-applet",
+          "props": {
+            "sm-column-span": 6,
+            "column-span": 2,
+            "row-span": 3
+          }
+        }
+      ]
+    }
+  },
+  "desks": [
+    {
+      "name": "Finance management",
+      "id": "desk-12345",
+      "slug": "finance-management",
+      "description": "A financial management desk for a finance director",
+      "access": "private",
+      "default": "true",
+      "createdOn": "12/02/2020",
+      "updatedOn": "24/02/2020",
+      "layout": {
+        "grid": {
+          "props": {
+            "fr-columns": 6,
+            "fr-rows": 4,
+            "gap": "15px"
+          }
+        },
+        "applets": [
+          {
+            "name": "Average days",
+            "tag": "cloud-financials-average-days",
+            "props": {
+              "sm-column-span": 6,
+              "column-span": 2,
+              "row-span": 1,
+              "sm-row-span": 1
+            }
+          },
+          {
+            "name": "Journals",
+            "tag": "cloud-financials-journals-tile",
+            "props": {
+              "sm-column-span": 6,
+              "sm-row-span": 1,
+              "row-span": 1
+            }
+          },
+          {
+            "name": "Purchase orders",
+            "tag": "cloud-financials-purchase-orders-tile",
+            "props": {
+              "sm-column-span": 6,
+              "sm-row-span": 1,
+              "row-span": 1
+            }
+          },
+          {
+            "name": "Todo applet",
+            "tag": "todo-applet",
+            "props": {
+              "sm-column-span": 6,
+              "column-span": 2,
+              "row-span": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "BTP desk",
+      "id": "desk-67890",
+      "slug": "btp-desk",
+      "description": "A demo desk for BTP",
+      "access": "private",
+      "default": "false",
+      "createdOn": "12/02/2020",
+      "updatedOn": "24/02/2020",
+      "layout": {
+        "grid": {
+          "props": {
+            "fr-columns": 6,
+            "fr-rows": 4,
+            "gap": "15px"
+          }
+        },
+        "applets": [
+          {
+            "name": "Business Tax Portal",
+            "tag": "advanced-btp-obligations-table",
+            "props": {
+              "sm-column-span": 6,
+              "column-span": 3,
+              "row-span": 1,
+              "sm-row-span": 1
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
